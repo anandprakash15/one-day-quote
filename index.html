@@ -11,17 +11,7 @@
 </div>
 
 <script>
-    function myFunction() {
-        var person = prompt("Please enter your name", "Your Good Name");
-        if(person == "swati"  || person == "swati" || person == "swatti" || person == "SWATI"){
-            document.getElementById("demo").innerHTML =
-                "Hello " + person + "! You are very special";
-        }else{
-            document.getElementById("demo").innerHTML =
-                "Hello " + person + "! You are doing good";
-        }
 
-    }
 
 
   var quoteArray=[
@@ -49,8 +39,24 @@
   "I've always believed that if you put in the work, the results will come"
    ];
 
+  function myFunction() {
+      var person = prompt("Please enter your name", "Your Good Name");
+      if(person! ='')
+      {
+          if (person == "swati" || person == "swati" || person == "swatti" || person == "SWATI") {
+              document.getElementById("demo").innerHTML =
+                  "Hello " + person + "! You are very special";
+          } else {
+              document.getElementById("demo").innerHTML =
+                  "Hello " + person + "! You are doing good";
+          }
           var randomNumber=Math.floor((Math.random() * 20) + 1);
           document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
+      }
+
+  }
+
+
 
 </script>
 
