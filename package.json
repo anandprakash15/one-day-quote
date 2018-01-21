@@ -1,0 +1,14 @@
+{
+  "name": "one-quote",
+  "version": "1.0.0",
+  "description": "Displays a random quote",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anandprakash15",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
