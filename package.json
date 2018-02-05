@@ -9,6 +9,8 @@
   "author": "anandprakash15",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "nodemailer": "^4.4.2",
+    "xoauth2": "^1.2.0"
   }
 }
