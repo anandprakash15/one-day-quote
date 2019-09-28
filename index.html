@@ -8,12 +8,17 @@
 
     <h1 style="color:#1a1a1a" id="demo"></h1>
   <h2 style="color:#1a1a1a" id="quote"></h2>
-</div>
+</div>;
 
 <script>
 
 
-
+  var msgArray=[
+    "Hi! Good choice! you've won yourself a faithful heart. lots of fun, excitement, passion, luxury(tentatively)
+    good company, and a very very happy, WONDERFUL Life! (a few sad times too)
+    Thanks you
+    your soulmate (by choice)
+  ]; 
   var quoteArray=[
   "I found something ..I love and never give up",
   "If you want to be best, You Have to do things that other people are not willing to do.",
@@ -44,17 +49,19 @@
       if(person == "Sonu"  || person == "SONU" || person == "sonu" || person == "sonu s" || person == "SONU S"){
           document.getElementById("demo").innerHTML =
               "Hello " + person + "! You are very special";
+         document.getElementById("demo").innerHTML =
+              "Hello " + person + "! You are very special";
+         var randomNumberS = document.getElementById('quote').innerHTML=msgArray[0];
       }else{
+          document.getElementById("demo").innerHTML =
+              "Hello " + person + "! You are doing good";
+        var randomNumber=Math.floor((Math.random() * 20) + 1);
+          document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
           document.getElementById("demo").innerHTML =
               "Hello " + person + "! You are doing good";
       }
 
-  }
-
-          var randomNumber=Math.floor((Math.random() * 20) + 1);
-          document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
-
+  }      
 </script>
-
 </body>
 </html>
