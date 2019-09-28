@@ -42,21 +42,26 @@
    ];
 
   function myFunction() {
-      var person = prompt("Please enter your name", "Your Good Name");
-      if(person == "Sonu"  || person == "SONU" || person == "sonu" || person == "sonu s" || person == "SONU S"){
-          document.getElementById("demo").innerHTML =
-              "Hello " + person + "! You are very special";
-         document.getElementById("demo").innerHTML =
-              "Hello " + person + "! You are very special";
-         var randomNumberS = document.getElementById('quote').innerHTML=msgArray[0];
-      }else{
-          document.getElementById("demo").innerHTML =
-              "Hello " + person + "! You are doing good";
-        var randomNumber=Math.floor((Math.random() * 20) + 1);
-          document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
-          document.getElementById("demo").innerHTML =
-              "Hello " + person + "! You are doing good";
-      }
+		  var person = prompt("Please enter your name", "Your Good Name");
+		  if(person == "Sonu"  || person == "SONU" || person == "sonu" || person == "sonu s" || person == "SONU S"){
+				var choice = prompt("Hi!I just wanted to know you that I love you very much and that I'd want to live my entire life with you beside me Will you ? please enter yes or no in prompt box ", "Please enter your choice Yes or no");
+				if(choice == 'YES' || choice == 'yes' || choice =='Yes') {
+					document.getElementById("demo").innerHTML =
+				  "Hello " + person + "! You are very special";
+					var randomNumberS = document.getElementById('quote').innerHTML=msgArray[0];
+				} else {
+					document.getElementById("demo").innerHTML =
+				  "Hello " + person + "! You are very special and you deserve much better than me.:)";
+				}
+			  
+		  }else{
+			document.getElementById("demo").innerHTML =
+				  "Hello " + person + "! You are doing good";
+			var randomNumber=Math.floor((Math.random() * 20) + 1);
+				  document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
+				  document.getElementById("demo").innerHTML =
+				  "Hello " + person + "! You are doing good";
+		  }
 
   }      
 </script>
