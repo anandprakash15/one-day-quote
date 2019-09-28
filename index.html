@@ -8,13 +8,13 @@
 
     <h1 style="color:#1a1a1a" id="demo"></h1>
   <h2 style="color:#1a1a1a" id="quote"></h2>
-</div>;
+</div>
 
 <script>
 
 
   var msgArray=[
-    "Hi! Good choice! you've won yourself a faithful heart. lots of fun, excitement, passion, luxury(tentatively) good company, and a very very happy, WONDERFUL Life! (a few sad times too) Thanks you your soulmate (by choice)"
+    "Hi! Good choice! <br /> you've won yourself a faithful heart. <br /> lots of fun, excitement, passion, luxury(tentatively) good company,<br /> and a very very happy, WONDERFUL Life! (a few sad times too) <br /> Thanks you <br /> your soulmate (by choice)"
   ]; 
   var quoteArray=[
   "I found something ..I love and never give up",
@@ -44,14 +44,14 @@
   function myFunction() {
 		  var person = prompt("Please enter your name", "Your Good Name");
 		  if(person == "Sonu"  || person == "SONU" || person == "sonu" || person == "sonu s" || person == "SONU S"){
-				var choice = prompt("Hi!I just wanted to know you that I love you very much and that I'd want to live my entire life with you beside me Will you ? please enter yes or no in prompt box ", "Please enter your choice Yes or no");
+				var choice = prompt("Hi!I just wanted to know you that \n I love you very much and that I'd want to live my entire life with you beside me \n Will you ? \n Please enter yes or no in prompt box ", "Please enter your choice Yes or no");
 				if(choice == 'YES' || choice == 'yes' || choice =='Yes') {
 					document.getElementById("demo").innerHTML =
 				  "Hello " + person + "! You are very special";
 					var randomNumberS = document.getElementById('quote').innerHTML=msgArray[0];
 				} else {
 					document.getElementById("demo").innerHTML =
-				  "Hello " + person + "! You are very special and you deserve much better than me.:)";
+				  "Hello " + person + "! You are very special and you deserve much better than me.:)"
 				}
 			  
 		  }else{
